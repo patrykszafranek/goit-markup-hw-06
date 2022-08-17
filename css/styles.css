@@ -774,9 +774,11 @@ header .contacts {
 /*-----------------------------*/
 .footer-socialmedia {
     padding-left: 70px;
+    margin-right: 78px;
 }
 
-.footer-socialmedia-header {
+.footer-socialmedia-header,
+.footer-newsletter-header {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -810,5 +812,65 @@ header .contacts {
 .footer-socialmedia-item:focus {
     background: var(--link-color);
     cursor: pointer;
+}
+
+.newsletter {
+display: flex;
+/* flex-direction: row; */
+align-items: flex-end;
+gap:12px;
+}
+.newsletter-label {
+display: flex;
+flex-direction: column;
+gap:20px;
+}
+.newsletter-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.newsletter-input {
+    width: 358px;
+height: 50px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+background-color:inherit;
+font-size: 16px;
+line-height: 1.25px;
+letter-spacing: 0.03em;
+color:#FFFFFF;
+}
+.newsletter-input::placeholder {
+    font-size: 16px;
+line-height: 1.25px;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+padding-left: 16px;
+}
+.newsletter-btn {
+    width: 200px;
+height: 50px;
+background-color: #2196F3;
+color:#fff;
+border-radius: 4px;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.9;
+display: flex;
+align-items: center;
+gap:24px;
+text-align: center;
+letter-spacing: 0.06em;
+border:none;
+justify-content:center;
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms
+}
+.newsletter-btn:hover, .newsletter-btn:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* ===== End Footer styles ===== */
